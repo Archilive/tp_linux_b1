@@ -80,3 +80,30 @@ ExecStart=sudo bash /srv/yt/yt-v2.sh
 [Install]
 WantedBy=multi-user.target
 ```
+
+```bash=
+archi@archi-VirtualBox://srv/yt$ systemctl status yt
+● yt.service - YTB DownLoad
+     Loaded: loaded (/etc/systemd/system/yt.service; disabled; vendor preset: enabled)
+     Active: active (running) since Mon 2021-11-22 21:32:20 CET; 6s ago
+   Main PID: 2106 (sudo)
+      Tasks: 3 (limit: 1106)
+     Memory: 1.5M
+        CPU: 14ms
+     CGroup: /system.slice/yt.service
+             ├─2106 sudo bash /srv/yt/yt-v2.sh
+             ├─2107 bash /srv/yt/yt-v2.sh
+             └─2113 sleep 3
+
+nov. 22 21:32:20 archi-VirtualBox systemd[1]: Started YTB DownLoad.
+nov. 22 21:32:20 archi-VirtualBox sudo[2106]:     root : PWD=/ ; USER=root ; COMMAND=/usr/bin/bash /srv/yt/yt-v2.sh
+nov. 22 21:32:20 archi-VirtualBox sudo[2106]: pam_unix(sudo:session): session opened for user root by (uid=0)
+nov. 22 21:32:20 archi-VirtualBox sudo[2107]: Waiting for link in links.txt
+nov. 22 21:32:23 archi-VirtualBox sudo[2107]: Waiting for link in links.txt
+nov. 22 21:32:26 archi-VirtualBox sudo[2107]: Waiting for link in links.txt
+```
+```bash
+archi@archi-VirtualBox://srv/yt$ journalctl -xe -u yt
+nov. 22 21:45:07 archi-VirtualBox sudo[2676]: Video https://www.youtube.com/watch?v=QohH89Eu5iM was downloaded.
+nov. 22 21:45:07 archi-VirtualBox sudo[2676]: File path : /srv/yt/downloads/5 Second Countdown HD/5 Second Countdown HD.mp4
+```
