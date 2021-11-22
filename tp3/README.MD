@@ -4,7 +4,7 @@
 
 Vous allez écrire **un script qui récolte des informations sur le système et les affiche à l'utilisateur.** Il s'appellera `idcard.sh` et sera stocké dans `/srv/idcard/idcard.sh`.
 
-📁 **Fichier [`/srv/idcard/idcard.sh`]()** 
+📁 **Fichier [`/srv/idcard/idcard.sh`](https://github.com/Archilive/tp_linux/blob/main/tp3/srv/idcard/idcard.sh)** 
 
 🌞 Vous fournirez dans le compte-rendu, en plus du fichier, **un exemple d'exécution avec une sortie**, dans des balises de code.
 
