@@ -1,11 +1,9 @@
-#!/bin/bash
-
 if [ ! -d /srv/yt/downloads ]; then
-    echo "Le fichier n'existe pas"
+    echo "Le fichier n'existe pas!"
         exit 1
         else
 if [ ! -d /var/log/yt ]; then
-        echo "Le fichier des logs n'est pas présent"
+        echo "Le fichier des logs n'existe pas"
         exit 1
         else
 if [[ $# -eq 0 ]]; then
