@@ -64,3 +64,19 @@ ERROR: Unable to download webpage: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILE
 ```
 
 # III. MAKE IT A SERVICE
+
+📁 **Le script [`/srv/yt/yt-v2.sh`](https://github.com/Archilive/tp_linux/blob/main/tp3/srv/yt/yt-v2.sh)**
+
+📁 **Fichier `/etc/systemd/system/yt.service`**
+
+```bash
+archi@archi-VirtualBox:/srv/yt$ cat /etc/systemd/system/yt.service
+[Unit]
+Description=YTB DownLoad
+
+[Service]
+ExecStart=sudo bash /srv/yt/yt-v2.sh
+
+[Install]
+WantedBy=multi-user.target
+```
