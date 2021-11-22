@@ -20,5 +20,6 @@ echo Video $1 was downloaded.
 echo Path : /srv/yt/downloads/"$title"/"$title".mp4
 
 
-echo [$(date "+%D %T")] Video $1 was downloaded. File path : /srv/yt/downloads/"$title"/"$title".mp4 > /var/log/yt/down>fi
+echo [$(date "+%D %T")] Video $1 was downloaded. File path : /srv/yt/downloads/"$title"/"$title".mp4 > /var/log/yt/downloads.log
+fi
 fi
