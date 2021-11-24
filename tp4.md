@@ -438,5 +438,6 @@ root         /var/www/super_site_web;
 - prouvez avec un `curl` depuis votre hôte que vous accédez bien au nouveau site
 
 ```bash= 
-
+[archi@node1 ~]$ curl http://10.250.1.10:8080
+<h1>LETS GOOO</h1>
 ```
