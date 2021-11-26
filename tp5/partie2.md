@@ -470,14 +470,17 @@ $ cat hosts
     - c'est les infos avec lesquelles vous avez validé à la main le bon fonctionnement de MariaDB (c'était avec la commande `mysql`)
 
 ```bash=
-[archi@web ~]$ curl web.tp5.linux
-<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
-<html><head>
-<title>301 Moved Permanently</title>
-</head><body>
-<h1>Moved Permanently</h1>
-<p>The document has moved <a href="http://www.ynov.com/">here</a>.</p>
-</body></html>
+$ curl http://web.tp5.linux
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0<!DOCTYPE html>
+<html class="ng-csp" data-placeholder-focus="false" lang="en" data-locale="en" >
+        <head
+ data-requesttoken="O5tdW1ZFRWs7RlCKRC58xJm52AelXO/d6KpkE2qUeBo=:f68XdG4IEx98Exu4AV0Q8vv0vEP8ZbnrncwFcAT1MUw=">
+                <meta charset="utf-8">
+...
+...
+...
 ```
 ---
 
