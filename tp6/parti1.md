@@ -22,14 +22,6 @@ sr0          11:0    1 1024M  0 rom
 
 # II. Partitioning
 
-> [**Référez-vous au mémo LVM pour réaliser cette partie.**](../../cours/memos/lvm.md)
-
-Le partitionnement est obligatoire pour que le disque soit utilisable. Ici on va rester simple : une seule partition, qui prend toute la place offerte par le disque.
-
-Comme vu en cours, le partitionnement dans les systèmes GNU/Linux s'effectue généralement à l'aide de LVM.
-
-Allons !
-
 🌞 **Partitionner le disque à l'aide de LVM**
 
 - créer un *physical volume (PV)* : le nouveau disque ajouté à la VM
