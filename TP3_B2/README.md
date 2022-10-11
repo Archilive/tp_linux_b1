@@ -187,7 +187,7 @@ success
     | 6     | Réponse ARP | x         | `router` `08:00:27:2c:d8:5b`| x          | `router` `08:00:27:24:c8:63`|
 
 
-🦈 **[Capture réseau `tp2_routage_marcel.pcapng`](./screen/tp2_arp.pcapng)**
+🦈 **[Capture réseau `tp2_routage_pc2.pcapng`](./screen/tp2_routage_pc2.pcapng)**
 
 ### 3. Accès internet
 
