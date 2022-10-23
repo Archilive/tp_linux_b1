@@ -1,0 +1,12 @@
+{
+    "host": {
+      "protocol": "udp",
+      "hostname": "127.0.0.1",
+      "port": 6969
+    },
+
+    "game_setting": {
+        "game_xpos": 0,
+        "game_ypos": 0
+    }
+  }
